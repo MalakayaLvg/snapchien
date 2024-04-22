@@ -23,26 +23,26 @@
                             <div class="card-body">
                                 <h5 class="card-text d-flex justify-content-center">{{ post.retweet.content }}</h5>
                             </div>
-                            <div class="card-footer d-flex justify-content-between bg-insta">
-                                <small class="text-muted mt-3 d-flex flex-column">
-                                    <div class="mb-2 text-white">
+                            <div class="card-footer d-flex justify-content-between ">
+                                <small class="text mt-3 d-flex flex-column">
+                                    <div class="mb-2">
                                         {% if post.retweet.author.image is not empty %}
                                             {% for image in post.retweet.author.image %}
                                                 <img class="img-fluid rounded-circle " style=" object-fit: cover;" src="{{ vich_uploader_asset(image)|imagine_filter('petite_vignette') }}" alt="">
                                             {% endfor %}
                                         {% else %}
-                                            <img class="img-fluid mx-1  rounded-3" style="max-width: 150px; max-height: 150px;" src="{{ asset("images/no_avatar.png")|imagine_filter('petite_vignette') }}" alt="">
+                                            <img class="img-fluid mx-1 rounded-3" style="max-width: 150px; max-height: 150px;" src="{{ asset("images/no_avatar.png")|imagine_filter('petite_vignette') }}" alt="">
                                         {% endif%}
                                         {{ post.retweet.author.username }}
                                     </div>
-                                    <div class="text-white">{{ post.retweet.createdAt|date("d/m/Y H:i") }}</div>
+                                    <div class="">{{ post.retweet.createdAt|date("d/m/Y H:i") }}</div>
                                 </small>
                             </div>
 
                         </div>
                     {% endif %}
                 </div>
-                <div class="card-footer d-flex justify-content-between bg-insta">
+                <div class="card-footer d-flex justify-content-between">
                     <small class="text-muted mt-3 d-flex flex-column">
                         <div class="mb-2 text-white">
                             {% if post.author.image is not empty %}
@@ -89,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center bg-insta">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div>
                                     <div class="d-flex">
                                         {% if comment.author.image is not empty %}

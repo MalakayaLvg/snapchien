@@ -44,10 +44,7 @@ class CommentController extends AbstractController
             $manager->flush();
 
         }
-
         return $this->redirectToRoute("app_show",["id"=>$post->getId()]);
-
-
     }
 
     #[Route('/comment/delete/{id}', name: 'delete_comment')]

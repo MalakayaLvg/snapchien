@@ -1,3 +1,15 @@
 body {
+    font-family: "DejaVu Sans", SansSerif;
+    margin: 0;
+    padding: 0;
 
+    background: #000025;
+}
+
+.primary-custom-bg{
+    background-color: #000025;
+}
+
+.secondary-custom-bg{
+    background-color: #0000c4;
 }

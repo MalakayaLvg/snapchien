@@ -26,9 +26,9 @@
                                 <div class="card-body">
                                     <h5 class="card-text d-flex justify-content-center">{{ post.retweet.content }}</h5>
                                 </div>
-                                <div class="card-footer d-flex justify-content-between bg-insta">
+                                <div class="d-flex justify-content-between">
                                     <small class="text-muted mt-3 d-flex flex-column">
-                                        <div class="mb-2 text-white">
+                                        <div class="mb-2">
                                             {% if post.retweet.author.image is not empty %}
                                                 {% for image in post.retweet.author.image %}
                                                     <img class="img-fluid rounded-circle " style=" object-fit: cover;" src="{{ vich_uploader_asset(image)|imagine_filter('petite_vignette') }}" alt="">
@@ -38,7 +38,7 @@
                                             {% endif%}
                                             {{ post.retweet.author.username }}
                                         </div>
-                                        <div class="text-white">{{ post.retweet.createdAt|date("d/m/Y H:i") }}</div>
+                                        <div class="">{{ post.retweet.createdAt|date("d/m/Y H:i") }}</div>
                                     </small>
                                 </div>
 
@@ -49,11 +49,11 @@
 
 
                     </div>
-                    <div class="card-footer d-flex justify-content-between bg-insta">
+                    <div class="card-footer d-flex justify-content-between">
                         <small class="text-muted mt-3 d-flex flex-column">
 
 
-                            <div class="mb-2 text-white">
+                            <div class="mb-2">
 
 
                                 {% if post.author.image is not empty %}
@@ -67,7 +67,7 @@
                             </div>
 
 
-                            <div class="text-white">{{ post.createdAt|date("d/m/Y H:i") }}</div>
+                            <div class="">{{ post.createdAt|date("d/m/Y H:i") }}</div>
 
 
 
