@@ -5,9 +5,9 @@
 {% block title %}S'inscrire{% endblock %}
 
 {% block body %}
-    <div class="card w-50 mx-auto mt-5">
+    <div class="card w-50 mx-auto mt-5 secondary-custom-bg">
         <div class="card-body">
-            <h1 class="card-title">Inscription</h1>
+            <h1 class="card-title text-white">Inscription</h1>
 
             {{ form_errors(registrationForm) }}
 
@@ -24,7 +24,7 @@
                 {{ form_row(registrationForm.agreeTerms) }}
             </div>
 
-            <button type="submit" class="btn btn-success">S'inscrire</button>
+            <button type="submit" class="btn btn-light">S'inscrire</button>
             {{ form_end(registrationForm) }}
         </div>
     </div>

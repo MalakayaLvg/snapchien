@@ -3,13 +3,29 @@ body {
     margin: 0;
     padding: 0;
 
-    background: #000025;
+    background: #c8c8ff;
 }
 
-.primary-custom-bg{
-    background-color: #000025;
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.secondary-custom-color{
+    color: #8585ff;
 }
 
 .secondary-custom-bg{
-    background-color: #0000c4;
+    background-color: #8585ff;
+}
+
+.postCard{
+    border: 1px solid rgba(221, 221, 255, 0.89);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.username{
+    font-weight: bold;
 }

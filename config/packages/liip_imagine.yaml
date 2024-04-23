@@ -8,16 +8,16 @@ liip_imagine:
   filter_sets:
     cache: ~
     vignette_post:
-      quality: 85
+      quality: 100
       filters:
         thumbnail: { size: [ 200,200 ], mode: outbound }
 
     vignette_comment:
-      quality: 85
+      quality: 100
       filters:
         thumbnail: { size: [ 75,75 ], mode: outbound }
 
     petite_vignette:
-      quality: 75
+      quality: 100
       filters:
         thumbnail: { size: [ 30,30 ], mode: outbound }

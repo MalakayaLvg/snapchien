@@ -3,7 +3,7 @@
 {% block title %}Se Connecter{% endblock %}
 
 {% block body %}
-    <div class="card w-50 mx-auto mt-5">
+    <div class="card w-50 mx-auto mt-5 secondary-custom-bg">
         <div class="card-body">
             <form method="post">
                 {% if error %}
@@ -16,7 +16,7 @@
                     </div>
                 {% endif %}
 
-                <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
+                <h1 class="h3 mb-3 font-weight-normal text-white">Connexion</h1>
                 <div class="mb-3">
                     <label for="inputUsername" class="form-label">Username</label>
                     <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" autocomplete="username" required autofocus>
@@ -30,7 +30,7 @@
                        value="{{ csrf_token('authenticate') }}"
                 >
 
-                <button class="btn btn-lg btn-primary mt-3" type="submit">Se Connecter</button>
+                <button class="btn btn-light mt-3" type="submit">Se Connecter</button>
             </form>
         </div>
     </div>
